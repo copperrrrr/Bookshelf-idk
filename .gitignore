@@ -1,0 +1,25 @@
+# Исполняемые файлы
+*.exe
+*.out
+*.app
+a.out
+main
+
+# Объектные файлы
+*.o
+*.obj
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Файлы данных (опционально)
+*.dat
+*.bin
