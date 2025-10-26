@@ -35,7 +35,7 @@ public:
     void setTitle(const std::string& t);
     void setAuthor(const std::string& a);
     void setYear(int y);
-    void setInstituion(const std::string& inst);
+    void setInstitution(const std::string& inst);
     void setStudyYear(int sy);
     void setPages(int p);
 
