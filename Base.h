@@ -17,7 +17,7 @@ public:
     virtual std::string getType() const = 0;
     virtual void saveToFile(std::ofstream& out) const = 0;
     virtual void loadFromFile(std::ifstream& in) = 0;
-    virtual void edit() const = 0;
+    virtual void edit() = 0;
 
     double getPrice() const;
     void setPrice(double p);

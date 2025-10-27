@@ -52,7 +52,7 @@ void Book::saveToFile(std::ofstream& out) const {
         << annotation << "\n"
         << genre << "\n"
         << pages << "\n"
-        << price << "\n"
+        << price << "\n";
 }
 
 void Book::loadFromFile(std::ifstream& in) {
@@ -163,7 +163,7 @@ void Book::setAnnotation(const std::string& ann) { annotation = ann; }
 void Book::setGenre(const std::string& g) { genre = g; }
 void Book::setPages(int p) {
     if (p <= 0) {
-        throw std:invalid_argument("Страниц должно быть больше 0.");
+        throw std::invalid_argument("Страниц должно быть больше 0.");
     }
     pages = p;
 }

@@ -45,7 +45,7 @@ void Base::setPrice(double p) {
 
 }
 
-Base& Base::operator(const Base& other) {
+Base& Base::operator=(const Base& other) {
     if (this != &other) {
         std::cout << ">>> Вызван оператор присваивания Base::operator=()" << std::endl;
         price = other.price;
@@ -57,7 +57,7 @@ Base& Base::operator(const Base& other) {
     return *this;
 }
 
-std::ostream& operator<<(std::ostream& os, const &Base obj) {
+std::ostream& operator<<(std::ostream& os, const Base& obj) {
     os << "Цена: " << obj.price << ".руб";
-    return os
+    return os;
 }
